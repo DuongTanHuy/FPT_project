@@ -1,0 +1,172 @@
+.heading-cart {
+    margin-top: 8rem;
+    background: var(--container-color);
+    padding: 12px 14px;
+    border: 1px solid hsl(200 100% 99% / 5%);
+    border-radius: 6px;
+    margin-bottom: 2rem;
+}
+
+.heading-cart .heading-title {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.container-cart {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.carts {
+    width: 60%;
+}
+
+.cart {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(109 111 111 / 34%);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart:not(:first-child) {
+    margin-top: 2rem;
+}
+
+.bill-total {
+    width: 40%;
+    background-color: rgb(109 111 111 / 34%);
+    backdrop-filter: blur(10px);
+    border-radius: 2rem;
+    padding: 0rem 2rem 3.4rem;
+}
+
+.cart-img {
+    border-radius: 1rem;
+    width: calc(40% - 1rem);
+    object-fit: cover;
+    height: 100%;
+}
+
+.cart-content {
+    padding-top: 1rem;
+    padding-right: 2rem;
+    width: calc(60% - 1rem);
+}
+
+.cart-total-price,
+.cart-warranty,
+.cart-price {
+    margin-top: 1rem;
+}
+
+.cart-name a{
+    color: #3e69f7;
+    font-weight: 500;
+}
+
+.group-cart {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-quantity {
+    width: 4rem;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #499eed;
+    background: transparent;
+    color: #fff;
+    text-align: center;
+}
+
+.cart-delete {
+    cursor: pointer;
+    background-color: #346dae;
+    padding: 8px 20px;
+    min-width: 8rem;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.bill-total-text {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 3.5rem;
+    color: #499eed;
+    font-weight: 500;
+}
+
+.bill-price {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 5rem;
+    font-weight: 600;
+    color: rgb(209, 209, 79);
+}
+
+.bill-btn {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.bill-btn a {
+	display:block;
+    padding: 15px 16px;
+    font-weight: 500;
+    border-radius: 0.6rem;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.bill-btn .add-cart {
+    background-color: #2f6fab;
+    box-shadow: 0px 10px 0 0 #33597b;
+}
+
+.bill-btn .pay-cart {
+    background-color: rgb(232, 232, 78);
+    box-shadow: 0px 10px 0 0 rgb(163, 163, 79);
+}
+
+.cart.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.cart.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.bill-total.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(-100%);
+    transition: all 1s;
+}
+
+.bill-total.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}

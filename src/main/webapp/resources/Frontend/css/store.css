@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+select, button, input, form {
+	font-family: "Poppins", sans-serif;
+	font-size: 1.4rem;
+}
+
+.content-sidebar .title-filter {
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	text-align: center;
+	padding: 15px;
+	border-radius: 6px;
+	min-width: 220px;
+	background: #2d2e37;
+	border: 1px solid hsl(200 100% 99%/ 5%);
+	cursor: pointer;
+	font-size: 1.4rem;
+}
+
+.content-sidebar .title-filter i {
+	font-size: 1.8rem;
+}
+
+
+
+.content-sidebar {
+	position: fixed;
+	top: 12.9%;
+	transform: translateX(50%);
+	right: calc((( 100% - 1200px)/2)/2);
+	z-index: 100;
+	user-select: none;
+}
+
+.content-sidebar .label-filter {
+	margin: 15px 0;
+	user-select: none;
+}
+
+.content-sidebar select {
+	border-radius: 6px;
+	outline: none;
+	min-width: 220px;
+	background: #2d2e37;
+	padding: 8px 14px;
+	border: 1px solid hsl(200 100% 99%/ 5%);
+	color: #fff;
+	outline: none;
+}
+
+.content-sidebar .search-submit {
+	background: #2d2e37;
+	border-radius: 6px;
+	border: 1px solid hsl(200 100% 99%/ 5%);
+	color: #fff;
+	outline: none;
+	padding:8px 0;
+	margin-top:30px;
+	display:block;
+	width: 100%;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.movies .heading {
+    padding: 17px 14px;
+}
+
+.form-filter {
+	position: absolute;
+	top: 50px;
+	opacity: 0;
+	visibility: hidden;
+	 transition: all 0.3s linear;
+}
+
+.form-filter.active{
+	opacity: 1;
+	visibility: visible;
+}

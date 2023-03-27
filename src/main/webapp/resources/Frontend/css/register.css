@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input,
+button,
+textarea,
+form,
+select {
+    font-size: 1.4rem;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    background:#000 url("../img/bg-register.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-container {
+    width: 980px;
+    height: 700px;
+    background-color: rgb(42 43 44 / 55%);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+}
+
+.container-slide {
+    width: 100%;
+    height: 270px;
+    overflow: hidden;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.container-slide img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: rgb(210, 210, 230);
+}
+
+.autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: #fff;
+    fill: none;
+    stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 2rem;
+}
+
+.register-content {
+    width: 100%;
+    height: calc(100% - 270px);
+    border-radius: 0px 0px 1rem 1rem;
+    padding: 0 8rem;
+}
+
+.form-register {
+    margin-top: 3.2rem;
+}
+
+.title-register {
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+}
+
+.form-register .row-input {
+    display: flex;
+    justify-content: space-between;
+}
+.form-register .row-input:not(:first-child) {
+    margin-top: 4rem;
+}
+
+.form-register .group-input {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.form-register .label-text {
+    text-align: center;
+    color: #fff;
+}
+
+.form-register .input-register {
+    background: transparent;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    width: 100%;
+}
+
+.form-register .line {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, #292d2e, #66676e);
+    border-radius: 4px;
+}
+
+.row-btn {
+    margin-top: 3rem;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row-btn .btn-register {
+    position: relative;
+    min-width: 20rem;
+    padding: 8px 16px;
+    border-radius: 1rem;
+    border: none;
+    padding: 15px 16px;
+    background-color: rgba(206, 214, 214, 0.162);
+    backdrop-filter: blur(10px);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.row-btn .btn-register::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.05rem;
+    width: 100%;
+    height: 0.6rem;
+    border-radius: 1rem 1rem 0 0;
+    background-color: rgb(113, 130, 136);
+}
+
+.btn-register:hover::after {
+    animation: anim 3.5s linear forwards;
+}
+
+@keyframes anim {
+    100% {
+        width: 0;
+    }
+}
+
+.action-login {
+    text-align: right;
+    position: relative;
+}
+
+.action-login a {
+    position: absolute;
+    color:#fff;
+    right: 0;
+    top: -2rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+

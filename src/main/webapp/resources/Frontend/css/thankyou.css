@@ -1,0 +1,165 @@
+.container .thank-you {
+    font-size: 5rem;
+    margin-top: 10rem;
+    text-align: center;
+    background: linear-gradient(to right, #3aaaf4, #43ffc4);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.thank-desc {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.thank-content {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.thank-left {
+    padding: 2rem 1.5rem 4rem;
+    border-radius: 1rem;
+    width: calc(40% - 1rem);
+    background: rgba(76, 74, 74, 0.268);
+    backdrop-filter: blur(32px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 0px rgba(98, 98, 98, 0.445);
+}
+
+.thank-title {
+    display: inline-block;
+    font-weight: bold;
+    color: transparent;
+    background: linear-gradient(to right, #478bea, #f567a7);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 2rem;
+    border-bottom: 2px solid lightblue;
+    align-self: flex-start;
+}
+
+.thank-title.right {
+    background: linear-gradient(
+        to right,
+        rgb(120, 242, 166),
+        rgb(48, 206, 233)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.thank-left-group {
+    margin-top: 1rem;
+    padding-left: 1rem;
+}
+
+.thank-left .info-thank {
+    font-size: 1.6rem;
+}
+
+.thank-left .info-thank:not(first-child) {
+    margin-top: 2rem;
+}
+
+.thank-right {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    width: calc(60% - 1rem);
+    background: rgba(76, 74, 74, 0.268);
+    box-shadow: 0px 0px 10px 0px rgba(98, 98, 98, 0.445);
+    min-height: 30rem;
+}
+
+.thank-right .group-product {
+    margin-top: 2rem;
+}
+
+.thank-right .product-item-th {
+    display: flex;
+    height: 120px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.thank-right .product-images-th {
+    height: 100%;
+    width: calc(20% - 1rem);
+}
+
+.thank-right .product-th-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thank-right .product-th-name {
+    width: calc((80% / 3) - 1rem);
+    font-weight: 500;
+}
+.thank-right .product-th-price {
+    width: calc((80% / 3) - 1rem);
+    font-weight: 500;
+}
+
+.thank-right .product-th-total {
+    width: calc((80% / 3) - 1rem);
+    font-weight: 500;
+}
+
+.action-ctn {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-buyer {
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 12px 16px;
+    color: #fff;
+    border-radius: 1rem;
+    font-weight: 600;
+    transition: all 0.3s linear;
+}
+
+.btn-buyer:hover {
+    background: #fff;
+    color: #000;
+}
+
+
+.thank-right .total-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.thank-right .total-price span.lv1 {
+    display: inline-block;
+    font-size: 3rem;
+    color: transparent;
+    background: linear-gradient(to right, #79e8b0, #4495f8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: bold;
+}
+
+.thank-right .total-price span.lv2 {
+    font-size: 3rem;
+    display: inline-block;
+    background: linear-gradient(to right, #7991e8, #cb75f7);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: bold;
+}
