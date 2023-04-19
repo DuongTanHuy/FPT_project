@@ -36,7 +36,7 @@
             <span class="tooltip">Search</span>
         </li>
         <li>
-            <a href="<c:url value='/admin/thong-ke' />">
+            <a href="<c:url value='/admin' />">
                 <i class="bx bx-grid-alt">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                          stroke="currentColor" class="w-6 h-6">
@@ -44,9 +44,9 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z"/>
                     </svg>
                 </i>
-                <span class="links_name">Dashboard</span>
+                <span class="links_name">Thống kê</span>
             </a>
-            <span class="tooltip">Dashboard</span>
+            <span class="tooltip">Thống kê</span>
         </li>
         <li>
             <a href="<c:url value='/admin/don-hang' />">
@@ -57,9 +57,9 @@
                               d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"/>
                     </svg>
                 </i>
-                <span class="links_name">Manage Order</span>
+                <span class="links_name">Đơn hàng</span>
             </a>
-            <span class="tooltip">Manage Order</span>
+            <span class="tooltip">Đơn hàng</span>
         </li>
         <li>
             <a href='<c:url value="/admin/san-pham"/>'>
@@ -70,9 +70,9 @@
                               d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"/>
                     </svg>
                 </i>
-                <span class="links_name">Manage Product</span>
+                <span class="links_name">Sản phẩm</span>
             </a>
-            <span class="tooltip">Manage Product</span>
+            <span class="tooltip">Sản phẩm</span>
         </li>
         <li>
             <a href='<c:url value="/admin/danh-muc"/>'>
@@ -84,9 +84,9 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6z"/>
                     </svg>
                 </i>
-                <span class="links_name">Categories</span>
+                <span class="links_name">Danh mục</span>
             </a>
-            <span class="tooltip">Categories</span>
+            <span class="tooltip">Danh mục</span>
         </li>
         <li>
             <a href='<c:url value="/admin/nhan-hieu"/>'>
@@ -97,9 +97,9 @@
                               d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/>
                     </svg>
                 </i>
-                <span class="links_name">Manage Brand</span>
+                <span class="links_name">Hãng</span>
             </a>
-            <span class="tooltip">Manage Brand</span>
+            <span class="tooltip">Hãng</span>
         </li>
         <li>
             <a href="<c:url value='/admin/tai-khoan' />">
@@ -110,9 +110,9 @@
                               d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"/>
                     </svg>
                 </i>
-                <span class="links_name">Manage User</span>
+                <span class="links_name">Khách hàng</span>
             </a>
-            <span class="tooltip">Manage User</span>
+            <span class="tooltip">Khách hàng</span>
         </li>
         <li>
             <a href="<c:url value='/admin/lien-he' />">
@@ -123,9 +123,9 @@
                               d="M20.25 3.75v4.5m0-4.5h-4.5m4.5 0l-6 6m3 12c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 014.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 00-.38 1.21 12.035 12.035 0 007.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 011.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 01-2.25 2.25h-2.25z"/>
                     </svg>
                 </i>
-                <span class="links_name">Manage Contact</span>
+                <span class="links_name">Liên hệ</span>
             </a>
-            <span class="tooltip">Manage Contact</span>
+            <span class="tooltip">Liên hệ</span>
         </li>
         <li>
             <a href="<c:url value='/admin' />">
@@ -137,9 +137,9 @@
                     </svg>
 
                 </i>
-                <span class="links_name">Setting</span>
+                <span class="links_name">Cài đặt</span>
             </a>
-            <span class="tooltip">Setting</span>
+            <span class="tooltip">Cài đặt</span>
         </li>
     </ul>
     <div class="profile_content">

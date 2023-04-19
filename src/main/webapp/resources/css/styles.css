@@ -7,13 +7,26 @@
     margin: 0;
     padding: 0;
     font: inherit;
+    scroll-behavior: smooth;
 }
+
+::-webkit-scrollbar {
+    width: 6px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: #ffb43a;
+}
+
 body {
     position: relative;
     min-height: 100vh;
     width: 100%;
-    background-image: url("http://localhost:8080/laptopshop/Frontend/img/bg-login.png");
-    background-size: 100%;
+    background-image: url("http://localhost:8080/laptopshop/Frontend/img/backgroung/5073414.jpg");
+    background-size: cover;
+    background-position: center ;
 }
 
 img,
@@ -31,13 +44,17 @@ video {
     left: 0;
     height: 100%;
     width: 78px;
-    background: #11101d;
+    /*background: #11101d;*/
+    backdrop-filter: blur(20px);
     padding: 6px 14px;
     transition: all 0.5s ease;
 }
 
 .sidebar.active {
     width: 240px;
+    background: none;
+    /*backdrop-filter: blur(20px);*/
+    background: #11101d;
 }
 
 .sidebar .logo_content .logo {
@@ -261,6 +278,16 @@ video {
     justify-content: center;
 }
 
+.profile #log_out:hover {
+    background: white;
+    color: #11101d;
+}
+
+.sidebar.active .profile #log_out:hover {
+    background: white;
+    color: #11101d;
+}
+
 .sidebar.active .profile #log_out {
     left: 88%;
 }
@@ -269,12 +296,23 @@ video {
     background: none;
 }
 
+.sidebar ~ .header_content {
+    background: none;
+    backdrop-filter: blur(20px);
+}
+
+.sidebar.active ~ .header_content {
+    /*backdrop-filter: blur(20px);*/
+    background: #11101d;
+}
+
 .header_content {
     position: fixed;
+    background: #11101d;
     height: 78px;
     width: calc(100% - 78px);
     left: 78px;
-    background: white;
+    /*background: white;*/
     z-index: 99;
     transition: all 0.5s ease;
 }

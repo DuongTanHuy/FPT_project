@@ -159,6 +159,7 @@
                 <th>Địa chỉ</th>
                 <th>Vai trò</th>
                 <th></th>
+                <th>Hành động</th>
             </tr>
 
             </thead>

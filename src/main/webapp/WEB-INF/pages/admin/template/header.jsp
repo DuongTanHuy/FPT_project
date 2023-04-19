@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
     .conteudo {
-      background: #11101d;
+      /*background: #11101d;*/
       width: 100%;
       height: 78px;
       position: relative;

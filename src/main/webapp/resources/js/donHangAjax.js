@@ -4,7 +4,8 @@ $(document).ready(function() {
 	ajaxGet(1);	
 	
 	function ajaxGet(page){		
-		var data = { trangThai : $('#trangThai').val(), tuNgay: $('#fromDate').val(), denNgay: $('#toDate').val()  } 
+		var data = { trangThai : $('#trangThai').val(), tuNgay: $('#fromDate').val(), denNgay: $('#toDate').val()  }
+
 		$.ajax({
 			type: "GET",		
 			data: data,
@@ -36,10 +37,10 @@ $(document).ready(function() {
 					                  '<td width="0%">'+'<input type="hidden" class="donHangId" value=' + donHang.id + '>'+ '</td>'+
 					                  '<td><button class="btn btn-warning btnChiTiet" >Chi Tiết</button>';
 					     if(donHang.trangThaiDonHang == "Đang chờ giao" || donHang.trangThaiDonHang == "Đang giao"){
-					    	 donHangRow += ' &nbsp;<button class="btn btn-primary btnPhanCong">Phân công</button>'+
-					    	               ' &nbsp;<button class="btn btn-danger btnHuy">Hủy đơn</button>' ;
+					    	 // donHangRow += ' &nbsp;<button class="btn btn-primary btnPhanCong">Phân công</button>'+
+					    	 //               ' &nbsp;<button class="btn btn-danger btnHuy">Hủy đơn</button>' ;
 					     } else if (donHang.trangThaiDonHang == "Chờ duyệt"){
-					         donHangRow += ' &nbsp;<button class="btn btn-primary btnCapNhat" >Cập Nhật</button> </td>';
+					         donHangRow += ' &nbsp;<button class="btn btn-primary btnCapNhat">Cập Nhật</button> </td>';
 					     }
 					                  
 					$('.donHangTable tbody').append(donHangRow);
@@ -50,7 +51,7 @@ $(document).ready(function() {
 						}
 					});
 				});
-								
+
 				if(result.totalPages > 1 ){
 					for(var numberPage = 1; numberPage <= result.totalPages; numberPage++) {
 						var li = '<li class="page-item "><a class="pageNumber">'+numberPage+'</a></li>';

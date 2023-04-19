@@ -155,6 +155,7 @@
             width: 100%;
             background: #11101d;
             color: #fff;
+            border: none;
         }
 
         .pagination {
@@ -278,6 +279,8 @@
                 <th>Hãng sản xuất</th>
                 <th>Đơn giá</th>
                 <th>Số lượng</th>
+                <th></th>
+                <th>Hành động</th>
             </tr>
             </thead>
             <tbody>

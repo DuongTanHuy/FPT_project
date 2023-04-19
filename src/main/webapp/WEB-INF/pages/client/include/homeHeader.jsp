@@ -29,7 +29,7 @@
 	<header> <!-- Nav -->
 	<div class="nav container">
 		<!-- Logo -->
-		<a href="<%=request.getContextPath()%>/" class="logo"> LAPTOP<span>.NET</span></a>
+		<a href="<%=request.getContextPath()%>/" class="logo"> SHOP<span> LAPTOP</span></a>
 		<!-- Search Box -->
 		<form action="/laptopshop/search">
 			<div class="search-box">

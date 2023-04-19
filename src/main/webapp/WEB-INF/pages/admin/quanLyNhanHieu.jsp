@@ -67,6 +67,7 @@
 
         .pagination {
             position: absolute;
+            color: white;
             right: 80px;
         }
 
@@ -85,8 +86,8 @@
         }
 
         .pagination li.active {
-            background: #11101d;
-            color: #fff;
+            background: #fff;
+            color: black;
         }
 
         .col-md-9 {
@@ -145,7 +146,7 @@
             <tr style="font-size: 20px; font-weight: 600">
                 <th>Mã</th>
                 <th>Tên Hãng</th>
-                <th></th>
+                <th>Hành động</th>
             </tr>
 
             </thead>

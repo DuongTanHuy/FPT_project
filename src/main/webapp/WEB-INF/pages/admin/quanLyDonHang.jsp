@@ -74,6 +74,10 @@
             color: white;
         }
 
+        .table.chiTietTable {
+            color: black;
+        }
+
         .page-header {
             color: white;
         }
@@ -273,6 +277,7 @@
                 <th>Ngày giao</th>
                 <th>Ngày nhận</th>
                 <th></th>
+                <th>Hành động</th>
             </tr>
             </thead>
             <tbody>
@@ -287,7 +292,8 @@
         <form class="chiTietForm">
             <div class="modal fade" id="chiTietModal" tabindex="-1" role="dialog"
                  aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document" style="min-width: 800px!important;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
+                <div class="modal-dialog" role="document"
+                     style="min-width: 800px!important;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
                     <div class="modal-content">
                         <div class="modal-header">
                             <p class="h4 modal-title" id="maDonHang"></p>
@@ -301,7 +307,7 @@
                                 <div class="col-12">
                                     <div class="card" style="padding-left: 40px;padding-right: 40px">
 
-                                        <div class="row pb-5 p-5">
+                                        <div class="row">
                                             <div class="col-md-6">
                                                 <h5 class="font-weight-bold mb-4">
                                                     <strong>Thông tin khách</strong>
@@ -358,12 +364,12 @@
                                             </div>
                                         </div>
 
-                                        <div class="d-flex flex-row-reverse bg-dark text-white p-4">
-                                            <div class="py-3 px-5 text-right">
-                                                <div class="mb-2">
-                                                    <p id="tongTien"></p>
-                                                </div>
-                                            </div>
+                                        <div style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; display: inline-block; border-radius: 3px;width: 143px;position: absolute;right: 152px;bottom: 115px;background: white;">
+                                            <%--                                            <div class="py-3 px-5 text-right">--%>
+                                            <%--                                                <div class="mb-2">--%>
+                                            <p id="tongTien" style="margin: 0; padding: 6px"></p>
+                                            <%--                                                </div>--%>
+                                            <%--                                            </div>--%>
                                         </div>
                                         <%--                                        <hr/>--%>
 

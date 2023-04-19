@@ -264,6 +264,7 @@
                 <th>Trạng thái</th>
                 <th>Ngày trả lời</th>
                 <th></th>
+                <th>Hành động</th>
             </tr>
             </thead>
             <tbody>

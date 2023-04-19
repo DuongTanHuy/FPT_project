@@ -28,8 +28,7 @@ public class DanhMuc {
 //	public DanhMuc(long id, String tenDanhMuc) {
 //		this.id = id;
 //		this.tenDanhMuc = tenDanhMuc;
-//	}
-	
+//	}	
 
 	public String getTenDanhMuc() {
 		return tenDanhMuc;

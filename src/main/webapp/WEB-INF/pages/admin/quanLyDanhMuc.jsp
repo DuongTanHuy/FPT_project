@@ -144,6 +144,7 @@
             <tr style="font-size: 20px; font-weight: 600">
                 <th>Mã danh mục</th>
                 <th>Tên Danh mục</th>
+                <th>Hàng động</th>
             </tr>
             </thead>
             <tbody>
